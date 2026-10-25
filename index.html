@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080710">
+  <meta name="description" content="A little birthday surprise made just for Nandhu.">
+  <title>Happy Birthday, Nandhu ✨</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="orb orb-pink" aria-hidden="true"></div><div class="orb orb-blue" aria-hidden="true"></div><div class="orb orb-gold" aria-hidden="true"></div>
+  <div class="hearts" id="floatingHearts" aria-hidden="true"></div>
+  <main class="journey" aria-label="Nandhu's birthday surprise">
+    <div class="journey-progress" aria-label="Birthday surprise progress"><span class="progress-label" id="step-label">A LITTLE BIRTHDAY SURPRISE</span><div class="step-dots" id="step-dots"><i class="current"></i><i></i><i></i><i></i><i></i><i></i></div></div>
+
+    <section class="step-section active" id="step1" aria-labelledby="welcome-title">
+      <div class="glass-card welcome-card">
+        <span class="glass-badge">✦ A DAY THAT'S ALL YOURS ✦</span>
+        <div class="birthday-art" aria-hidden="true"><span class="art-orbit orbit-one"></span><span class="art-orbit orbit-two"></span><div class="art-cake"><span class="art-flame"></span><span class="art-candle"></span><span class="art-icing"></span><span class="art-cake-top"></span><span class="art-cake-base"></span><span class="art-plate"></span></div><span class="art-star art-star-one">✦</span><span class="art-star art-star-two">✧</span><span class="art-star art-star-three">✴</span><span class="art-heart">♡</span></div>
+        <h1 id="welcome-title">Happy Birthday,<br><span>Nandhu!</span></h1>
+        <p>A little birthday universe, made brighter because you’re in it. There’s a letter, a few memories, and a tiny game waiting inside.</p>
+        <button class="action-btn" id="start-btn">Tap to begin <span>✨</span></button>
+      </div>
+    </section>
+
+    <section class="step-section" id="step2" aria-labelledby="envelope-title" aria-hidden="true">
+      <div class="glass-card">
+        <span class="glass-badge">SPECIAL DELIVERY 💌</span>
+        <h2 id="envelope-title">A little note for you</h2>
+        <p>There are a few birthday wishes tucked inside. Tap the envelope to open them.</p>
+        <button class="envelope-box" id="envelope" aria-label="Open your birthday letter"><span class="envelope-back"></span><span class="letter-peek">A little wish<br>for Nandhu <b>♡</b></span><span class="envelope-pocket"></span><span class="envelope-flap"></span><span class="envelope-seal">✦</span></button>
+        <p class="hint" id="envelope-hint">Tap the envelope seal</p>
+        <button class="action-btn hidden" id="letter-next">Read your letter <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="step-section" id="step3" aria-labelledby="letter-title" aria-hidden="true">
+      <div class="glass-card letter-card">
+        <span class="glass-badge">WORDS FROM THE HEART ✍️</span>
+        <h2 id="letter-title">For your next trip around the sun</h2>
+        <div class="letter-scroll"><p class="letter-text" id="letter-text"><span class="cursor-blink" aria-hidden="true"></span></p></div>
+        <p class="letter-signoff" id="letter-signoff">With so much love, today and always <span>♡</span></p>
+        <button class="action-btn hidden" id="gallery-next">A little memory garden <span>→</span></button>
+        <button class="text-btn hidden" id="letter-skip">Read it all now</button>
+      </div>
+    </section>
+
+    <section class="step-section" id="step4" aria-labelledby="gallery-title" aria-hidden="true">
+      <div class="glass-card gallery-card">
+        <span class="glass-badge">YOUR LITTLE MEMORY GARDEN 🌷</span>
+        <h2 id="gallery-title">Little moments,<br><span>big feelings.</span></h2>
+        <p>One lovely memory, tucked right here in your birthday garden.</p>
+        <article class="memory-card single-memory"><div class="memory-photo" data-photo="one"><img class="sideways-photo" src="memory-nandhu.jpg" alt="Two people smiling together outdoors"></div><label class="photo-picker">＋ Replace this photo<input type="file" accept="image/*" data-upload="one" aria-label="Replace the birthday memory photo"></label></article>
+        <p class="small-note">Your photo is part of this project. Replacing it saves your new choice in this browser.</p>
+        <button class="action-btn" id="cards-next">A few more wishes <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="step-section" id="step5" aria-labelledby="cards-title" aria-hidden="true">
+      <div class="glass-card notes-card">
+        <span class="glass-badge">A FEW THINGS TO REMEMBER 🧸</span>
+        <h2 id="cards-title">Little notes, <span>just for you.</span></h2>
+        <p>Tap a card to turn it over and find your wish.</p>
+        <div class="flip-grid">
+          <button class="flip-card" aria-label="Flip your first birthday wish"><span class="flip-inner"><span class="flip-front"><b>☼</b><strong>Your kind of light</strong><small>Tap to reveal</small></span><span class="flip-back">You make ordinary moments feel like the ones we’ll remember. Keep shining in your own lovely way. ✨</span></span></button>
+          <button class="flip-card" aria-label="Flip your second birthday wish"><span class="flip-inner"><span class="flip-front"><b>☾</b><strong>Room to dream</strong><small>Tap to reveal</small></span><span class="flip-back">May this year bring brave new beginnings, belly laughs, soft mornings, and everything you’ve been wishing for. 🌙</span></span></button>
+          <button class="flip-card" aria-label="Flip your third birthday wish"><span class="flip-inner"><span class="flip-front"><b>♡</b><strong>Always loved</strong><small>Tap to reveal</small></span><span class="flip-back">Today is a reminder of how loved you are. Keep that feeling close, today and every ordinary day. 💖</span></span></button>
+        </div>
+        <button class="action-btn" id="game-next">One tiny birthday game <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="step-section" id="step6" aria-labelledby="game-title" aria-hidden="true">
+      <div class="glass-card game-card">
+        <span class="glass-badge">A TINY BIRTHDAY CHALLENGE ✨</span>
+        <h2 id="game-title">Catch a little <span>birthday magic.</span></h2>
+        <p>Catch the falling wishes before they disappear. How many can you gather in 20 seconds?</p>
+        <div class="game-panel">
+          <div class="game-topline"><span>THE WISH GARDEN</span><span id="game-status">READY WHEN YOU ARE</span></div>
+          <div class="score-row"><div><small>WISHES CAUGHT</small><b id="score">00</b></div><div class="timer"><small>TIME LEFT</small><b><span id="timer">20</span><i>s</i></b></div></div>
+          <div class="playfield" id="playfield"><div class="game-welcome" id="game-welcome"><b>✦</b><strong>Your wish garden awaits</strong><span>Start the game, then catch the stars!</span></div></div>
+          <div class="game-progress"><i id="game-progress"></i></div>
+        </div>
+        <button class="action-btn" id="start-game">Let’s play <span>✦</span></button>
+        <p class="game-help">Tap, click, or press the falling wishes.</p>
+        <div class="birthday-finale hidden" id="birthday-finale"><span>✦ &nbsp; ♡ &nbsp; ✦</span><strong>Happy birthday, Nandhu!</strong><small>May the year ahead feel like your favorite song.</small></div>
+      </div>
+    </section>
+  </main>
+  <aside class="music-dock" aria-label="Birthday background music">
+    <div class="music-panel hidden" id="music-panel">
+      <div class="music-track"><span class="music-disc" aria-hidden="true">♫</span><span><b>The Love Bug Has Bitten</b><small>Background score · Anirudh Ravichander</small></span></div>
+    </div>
+    <audio id="birthday-audio" src="birthday-score.mp3" preload="none" loop></audio>
+    <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-expanded="false" aria-controls="music-panel">
+      <span class="music-note" aria-hidden="true">♫</span><span class="music-copy"><b>Birthday soundtrack</b><small id="music-status">Tap to play</small></span><span class="music-equalizer" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
